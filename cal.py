@@ -7,11 +7,20 @@ print(f'Olá! me chamo {nome}, atualmente tenho {idade} anos, {altura} metros de
 
 print('====================================================================================')
 
-nome = str(input('Digite seu nome: '))
-idade = int(input('Digite sua idade: '))
-altura = float(input('Digite sua altura em metros: '))
-peso_kg = float(input('Digite seu peso em quilogramas: '))
+#nome = str(input('Digite seu nome: '))
+#idade = int(input('Digite sua idade: '))
+#altura = float(input('Digite sua altura em metros: '))
+#peso_kg = float(input('Digite seu peso em quilogramas: '))
 
-print(f'Seja bem vindo {nome}! vimos que você tem {idade} anos de idade, que sua altura é de {altura} metros e que pesa {peso_kg}kg.')
+#print(f'Seja bem vindo {nome}! vimos que você tem {idade} anos de idade, que sua altura é de {altura} metros e que pesa {peso_kg}kg.')
 
 print('=====================================================================================')
+
+print('Operações aritméticas')
+print('Operação de soma: 5 + 5 = ', 5 + 5)
+print('Operação de subtração: 5 - 5 = ', 5 - 5)
+print('Operação de multiplicação: 5 * 5 = ', 5 * 5)
+print('Operação de divisão (resto float): 5 / 5 = ', 5 / 5)
+print('Operação de divisão (resto inteiro): 5 // 5 = ', 5 // 5)
+print('Operação de módulo: 5 % 5 = ', 5 % 5)
+print('Operação de exponenciação: 5 ** 5 = ', 5 ** 5)
