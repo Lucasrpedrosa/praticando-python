@@ -1,63 +1,55 @@
-"""
-nome = 'Lucas'
-idade = 17
-altura = 1.76
-peso_kg = 94.5
+import random
 
-print(f'Olá! me chamo {nome}, atualmente tenho {idade} anos, {altura} metros de altura e peso {peso_kg}kg.')
+print('Olá, Bem Vindo(a) ao teste de operadores de comparação e atribuição!')
 
-print('====================================================================================')
+print('O programa irá funcionar da seguinte forma: O computador ira selecionar uma número de 1 a 10, sua missão é adivinhar qual é o valor exato, mas caso não consiga acertar de primeira,  o computador ira informar e dar dicas se o valor selecionado por você é maior ou menor que o valor padrão. Em seguida pedirá para informar qual operação e qual valor vc escolherá para tentar novamente acertar o valor da máquina.')
 
-nome = str(input('Digite seu nome: '))
-idade = int(input('Digite sua idade: '))
-altura = float(input('Digite sua altura em metros: '))
-peso_kg = float(input('Digite seu peso em quilogramas: '))
+n1 = random.randint(1,10)
+n2 = 0
+while n2 != n1:
+    n2 = int(input('Adivinhe qual número inteiro a máquina está pensando: '))
+    if n2 == n1:
+        print('Parabéns! Você acertou!')
+        break
+    elif n2 < n1:
+        continua = str(input('Passou perto! Seu valor selecionado é menor que o da máquina, deseja continuar?(S/N) '))
+        if continua == 'N':
+            break
+        elif continua == 'S':
+           operacao =  str(input('Ótimo! Escolha qual operação deseja realizar: [1] Soma ou [2] Subtração: '))
+           if operacao == '1':
+                soma = int(input('Quanto você quer adicionar? '))
+                n1 += soma
+           elif  operacao == '2':
+                subtracao = int(input('Quanto você quer subtrair? '))
+                n1 -= subtracao
+           else:
+                print('Erro Operação (menor)!')
+        else:
+            print('Erro Continuar (menor)!')
+    elif n2 > n1:
+        continua = str(input('Passou perto! Seu valor selecionado é maior que o da máquina, deseja continuar?(S/N) '))
+        if continua == 'N':
+            break
+        elif continua == 'S':
+           operacao =  str(input('Ótimo! Escolha qual operação deseja realizar: [1] Soma ou [2] Subtração: '))
+           if operacao == '1':
+                soma = int(input('Quanto você quer adicionar? '))
+                n1 += soma
+           elif  operacao == '2':
+                subtracao = int(input('Quanto você quer subtrair? '))
+                n1 -= subtracao
+           else:
+                print('Erro Operação (maior)!')
+        else:
+            print('Erro Continuar (maior)!')
+    else:
+        print('Erro Geral!')
+    
+    
+    
 
-print(f'Seja bem vindo {nome}! vimos que você tem {idade} anos de idade, que sua altura é de {altura} metros e que pesa {peso_kg}kg.')
 
-print('Operações aritméticas')
-print('Operação de soma: 5 + 5 = ', 5 + 5)
-print('Operação de subtração: 5 - 5 = ', 5 - 5)
-print('Operação de multiplicação: 5 * 5 = ', 5 * 5)
-print('Operação de divisão (resto float): 5 / 5 = ', 5 / 5)
-print('Operação de divisão (resto inteiro): 5 // 5 = ', 5 // 5)
-print('Operação de módulo: 5 % 5 = ', 5 % 5)
-print('Operação de exponenciação: 5 ** 5 = ', 5 ** 5)
-"""
-print('Olá, Seja Bem Vindo(a) a um breve programa de calculadora de operadores aritméticos!')
 
-n1 = float(input('Digite um número: '))
-n2 = float(input('Digite outro número: '))
-
-print('Informe o número de uma das seguintes operações:')
-print('[1] Soma')
-print('[2] Subtração')
-print('[3] Multiplicação')
-print('[4] Divisão')
-print('[5] Divisão (resto inteiro)')
-print('[6] Potência')
-
-operacao = str(input('Digite o número da operação desejada: '))
-
-if operacao == '1':
-    print(f'A operação escolhida foi Soma! O resultado de {n1} + {n2} = {n1+n2}')
-
-elif operacao == '2':
-    print(f'A operação escolhida foi Subtração! O resultado de  {n1} - {n2} = {n1-n2}')
-
-elif operacao == '3':
-    print(f'A operação escolhida foi Multiplicação! O resultado de {n1} * {n2} = {n1*n2}')
-
-elif operacao == '4':
-    print(f'A operação escolhida foi Divisão! O resultado de {n1} / {n2} = {n1/n2}')
-
-elif operacao == '5':
-    print(f'A operação escolhida foi Divisão (resto inteiro)! O resultado de {n1} // {n2} = {n1//n2}')
-
-elif operacao == '6':
-    print(f'A operação escolhida foi Potência! O resultado de {n1} ** {n2} = {n1**n2}')
-
-else:
-    print('Ocorreu um erro!!!')
 
     
