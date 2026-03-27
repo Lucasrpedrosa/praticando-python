@@ -138,7 +138,7 @@ for indice, carro in enumerate(carros):
 
     print(len(lista_a)) # 3
 
-    #.sort() - ordena a lista
+    #.sort() - ordena a lista (alterando a lista original)
 
     linguagens = ["python", "js", "c", "java", "csharp"]
     linguagens.sort()  # ["c", "csharp", "java", "js", "python"] - Ordem alfabetica
@@ -155,5 +155,10 @@ for indice, carro in enumerate(carros):
     linguagens = ["python", "js", "c", "java", "csharp"]
     linguagens.sort(key=lambda x: len(x), reverse=True)  # ["python", "csharp", "java", "js", "c"] - Ordem decrescente
     print(linguagens)
+
+    #.sorted() - Ordena a lista (Se alterar a original)
+
+    linguagens.sorted(key=lambda x: len(x)) # ["c", "js", "java", "python", "csharp"] - Ordem Crescente
+    linguagens.sorted(key=lambda x: len(x), reverse=True) # ["python", "csharp", "java", "js", "c"] - Ordem decrescente
 
 
