@@ -1,0 +1,7 @@
+Dev: Lucas Ribeiro
+Objetivo: Praticar meus conhecimentos em python, constantemente realizando implementações de melhorias a cada conteúdo ou ferramenta estudada. 
+
+Nome do programa: Banco Venturis
+Objetivo: Realizar verificações de usuarios, recebendo os nomes, a idade, o email, CPF do cliente.
+Separa os clientes em clientes Padrão, Juvenis e Aposentados.
+Cada tipo de conta terá suas particuliaridades, podendo ter acesso a conteúdos adicionais ou limitação de recursos.
